@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center"
+    android:background="#E3F2FD"> <!-- light blue background -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <!-- Title -->
+        <TableRow>
+            <TextView
+                android:text="Weather Forecast"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_span="3"
+                android:background="@drawable/table_cell" />
+        </TableRow>
+
+        <!-- Header -->
+        <TableRow>
+            <TextView
+                android:text="City"
+                android:textStyle="bold"
+                android:background="@drawable/table_cell"/>
+            <TextView
+                android:text="Temp"
+                android:textStyle="bold"
+                android:background="@drawable/table_cell"/>
+            <TextView
+                android:text="Weather"
+                android:textStyle="bold"
+                android:background="@drawable/table_cell"/>
+        </TableRow>
+
+        <!-- Rows -->
+        <TableRow>
+            <TextView android:text="Mumbai" android:background="@drawable/table_cell"/>
+            <TextView android:text="32°C" android:background="@drawable/table_cell"/>
+            <TextView android:text="☀️" android:background="@drawable/table_cell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Delhi" android:background="@drawable/table_cell"/>
+            <TextView android:text="28°C" android:background="@drawable/table_cell"/>
+            <TextView android:text="🌥️" android:background="@drawable/table_cell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Pune" android:background="@drawable/table_cell"/>
+            <TextView android:text="30°C" android:background="@drawable/table_cell"/>
+            <TextView android:text="🌤️" android:background="@drawable/table_cell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Bangalore" android:background="@drawable/table_cell"/>
+            <TextView android:text="26°C" android:background="@drawable/table_cell"/>
+            <TextView android:text="🌦️" android:background="@drawable/table_cell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Chennai" android:background="@drawable/table_cell"/>
+            <TextView android:text="34°C" android:background="@drawable/table_cell"/>
+            <TextView android:text="☀️" android:background="@drawable/table_cell"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Kolkata" android:background="@drawable/table_cell"/>
+            <TextView android:text="29°C" android:background="@drawable/table_cell"/>
+            <TextView android:text="🌧️" android:background="@drawable/table_cell"/>
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>
